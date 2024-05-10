@@ -4,7 +4,6 @@ import { useStatusStore } from '@/stores/status'
 export default {
   props: {
     discordId: String,
-    revoltId: String
   },
 
   setup() {
@@ -12,7 +11,7 @@ export default {
   },
 
   mounted() {
-    this.status.fetch(this.discordId!, this.revoltId!)
+    this.status.fetch(this.discordId!)
   }
 }
 </script>
@@ -21,9 +20,6 @@ export default {
   <div>
     <p>
       <span :class="status.discordStatus">{{ status.discordStatus }}</span> on Discord
-    </p>
-    <p>
-      <span :class="status.revoltStatus">{{ status.revoltStatus }}</span> on Revolt
     </p>
   </div>
 </template>

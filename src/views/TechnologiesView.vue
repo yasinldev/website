@@ -6,29 +6,29 @@ export default {
     return {
       technologies: [
         {
-          title: 'Elixir',
-          link: 'https://elixir-lang.org/',
-          desc: 'Building scalable, fault-tolerant, real-time applications with many 9s.'
+          title: 'C++',
+          link: '#',
+          desc: 'Websoket creation, system applications and embedded system development'
         },
         {
-          title: 'Erlang',
-          link: 'https://erlang.org/',
-          desc: 'Building libraries that work across BEAM languages.'
+          title: 'React',
+          link: 'https://reactjs.org/',
+          desc: 'Building interactive, stateful frontends for web applications.'
         },
         {
           title: 'Rust',
           link: 'https://rust-lang.org/',
-          desc: 'Writing efficient, robust applications. Optimising Elixir via NIFs.'
+          desc: 'Writing efficient, robust applications. Optimising performance and memory usage.'
         },
         {
-          title: 'Vue',
-          link: 'https://vuejs.org/',
-          desc: 'Constructing stateful, interactive frontends for web applications when needed.'
+          title: 'PHP',
+          link: 'https://www.php.net/',
+          desc: 'Server-side scripting, creating dynamic web pages and creating a programming language 😃.'
         },
         {
-          title: 'TypeScript',
-          link: 'https://www.typescriptlang.org/',
-          desc: 'To make JavaScript usable.'
+          title: 'Objective-C',
+          link: 'https://developer.apple.com/documentation/objectivec',
+          desc: 'Just interested in the language, not actively using it.'
         }
       ]
     }

@@ -11,7 +11,7 @@ export default {
 <template>
   <footer>
     <hr />
-    <p>👻 - {{ year }}</p>
+    <p>👾 - {{ year }}</p>
   </footer>
 </template>
 

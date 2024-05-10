@@ -44,13 +44,13 @@ export default {
       <RouterLink v-tippy="'Projects'" @click="play" to="/projects"><IconPackage /></RouterLink>
     </nav>
     <nav>
-      <a v-tippy="'GitHub'" href="https://github.com/meppu" target="_blank">
+      <a v-tippy="'GitHub'" href="https://github.com/yasinldev" target="_blank">
         <IconGithub />
       </a>
-      <a v-tippy="'Discord'" href="https://discord.com/users/1013270483560579165" target="_blank">
+      <a v-tippy="'Discord'" href="https://discord.com/users/1108777629571616798" target="_blank">
         <IconDiscord />
       </a>
-      <a v-tippy="'Email'" href="mailto:website@meppu.boo">
+      <a v-tippy="'Email'" href="mailto:ozkayayasin964@gmail.com">
         <IconEmail />
       </a>
     </nav>
@@ -63,7 +63,7 @@ div {
   height: 100%;
 
   background: var(--color-surface);
-  border: 1px solid var(--color-overlay);
+  border: 0.03rem solid var(--color-overlay);
   border-radius: 6px;
   padding: 1.2rem 0px 0.8rem;
 }

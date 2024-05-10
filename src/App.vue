@@ -9,7 +9,7 @@ import { useRepositoriesStore } from '@/stores/repositories'
 
 // fetch repositories at start for better ux
 onMounted(() => {
-  useRepositoriesStore().fetch('meppu')
+  useRepositoriesStore().fetch('yasinldev')
 })
 </script>
 

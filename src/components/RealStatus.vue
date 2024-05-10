@@ -19,7 +19,7 @@ export default {
     const sleeping = [0, 10]
 
     if (hours >= sleeping[0] && hours <= sleeping[1]) {
-      this.status = "I'm most likely asleep 😴"
+      this.status = "I'm usually in the library 📚"
       return
     }
 

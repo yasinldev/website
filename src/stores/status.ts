@@ -4,22 +4,19 @@ export const useStatusStore = defineStore('status', {
   state() {
     return {
       discordStatus: 'Offline',
-      revoltStatus: 'Offline',
       needFetch: true
     }
   },
   actions: {
-    async fetch(discordId: string, revoltId: string) {
+    async fetch(discordId: string) {
       if (!this.needFetch) return
 
       const discordPromise = fetch(`https://api.lanyard.rest/v1/users/${discordId}`)
-      const revoltPromise = fetch(`https://revard.meppu.boo/api/users/${revoltId}`)
 
-      Promise.all([discordPromise, revoltPromise]).then(async ([discordResp, revoltResp]) => {
+      Promise.all([discordPromise]).then(async ([discordResp]) => {
         const {
           data: { discord_status: discord_status }
         } = await discordResp.json()
-        const { online: revolt_online } = await revoltResp.json()
 
         switch (discord_status) {
           case 'online':
@@ -39,7 +36,6 @@ export const useStatusStore = defineStore('status', {
             break
         }
 
-        this.revoltStatus = revolt_online ? 'Online' : 'Offline'
         this.needFetch = false
       })
     }
